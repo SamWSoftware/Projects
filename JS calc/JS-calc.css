@@ -1,0 +1,17 @@
+#case {
+    background-color: darkgray;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: black;
+}
+#screen {
+    background-color: white;
+    padding: 20px 40px 20px 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.myBtn {
+    margin:5px;
+}
