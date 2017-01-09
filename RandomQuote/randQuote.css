@@ -1,0 +1,17 @@
+#centerbox {
+    background: white;
+    margin: 100px 100px 100px 100px;
+    border-radius: 20px;
+}
+
+#topBox {
+    padding: 20px 20px 20px 20px;
+}
+
+html body {
+    background: orange;
+}
+
+#newQuote {
+    margin: 20px 20px 20px 20px;
+}
