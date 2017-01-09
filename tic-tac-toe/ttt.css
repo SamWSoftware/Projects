@@ -1,0 +1,46 @@
+#case {
+    margin: 30px;
+    padding: 20px;
+    background-color: chocolate;
+}
+
+#screen {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+#screen2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+#player1Go, #player2Go {
+    background-color: blue;
+    color: white;
+}
+
+#grid {
+    padding-bottom: 98%;
+    margin: 10px;
+    background-color: black;
+    
+}
+
+.square {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.content {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    padding: 10% 5%;
+}

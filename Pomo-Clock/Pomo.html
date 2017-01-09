@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="Pomo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+<script src="Pomo.js"></script>
+
+<div id="main">
+    <div id="MyBanner">
+        <h2 class="text-center"><em>Pomodoro Clock</em></h2>
+    </div>
+    <div id="titlesec">
+        <h1 id="title" class="text-center">Session</h1>
+    </div>
+    <div id="clock">
+        <h1 id="timeleft" class="text-center">25:00</h1>
+        <div class="row">
+            <div class="col-xs-6">
+                <button class="btn btn-block" onclick="startTimer()">Start</button>
+            </div>
+            <div class="col-xs-6">
+                <button class="btn btn-block" onclick="stopTimer()">Stop</button>
+            </div>
+        </div>
+    </div>
+    <div id="controlls" class="row">
+        <div class="col-xs-6" id="leftctrls">
+            <div class="row">
+                <div class="col-xs-12" id="sessionval">
+                    <h4 class="text-center">Session Length</h4>
+                    <h3 id="sessionLength" class="text-center"> 25:00
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <button onclick="addSession()" class="btn btn-block myBtn">+</button>                    
+                </div>
+                <div class="col-xs-6">
+                    <button onclick="minusSession()" class="btn btn-block myBtn">-</button>                    
+                </div>
+                <div class="col-xs-12">
+                    <h2 id="sessionShort">
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6" id="righctrls">
+            <div class="row">
+                <div class="col-xs-12" id="restval">
+                    <h4 class="text-center">Rest Length</h4>
+                    <h3 id="restLength" class="text-center"> 5:00
+                    </h3>
+                </div>
+                <div class="col-xs-6">
+                    <button onclick="addRest()" class="btn btn-block myBtn">+</button>                    
+                </div>
+                <div class="col-xs-6">
+                    <button onclick="minusRest()" class="btn btn-block myBtn">-</button>                    
+                </div>
+                <div class="col-xs-12">
+                    <h2 id="restShort">
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

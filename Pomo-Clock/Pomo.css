@@ -1,0 +1,10 @@
+#main {
+    padding: 20px;
+    width: 420px;
+    height: 420px;
+    box-sizing: border-box;
+    background-color:darksalmon;
+    color:black;
+    border-radius: 150px;
+    font-family: 'Comfortaa', cursive; 
+}
