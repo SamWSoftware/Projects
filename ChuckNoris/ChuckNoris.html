@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="ChuckNoris.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="ChuckNoris.js"></script>
@@ -7,14 +8,20 @@
 <div id="centerbox">
     <div id="topBox">
         <div id="quotes">
-            <i class="fa fa-quote-left"></i> <span id="quotetext"> </span>
+            <span id="quotetext"> </span> 
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6">
-            Twitter Logo
+        <div class="col-sm-6 col-xs-12 text-center" id="tweetthis">
+            <button class="btn" id="tweetbtn">
+                <table>
+                    <tr><td><span id="moveup">Tweet This Joke</span> </td>
+                        <td><i class="fa fa-twitter fa-4x " aria-hidden="true"></i></td>
+                    </tr>
+                </table>
+            </button>
         </div>
-        <div class="col-xs-6">
+        <div class="col-sm-6 col-xs-12 text-center  ">
             <button id="newQuote" class="btn btn-primary" >
                 New Quote
             </button>

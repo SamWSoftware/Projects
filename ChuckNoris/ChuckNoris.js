@@ -12,7 +12,7 @@ $(document).ready(function () {
     
     newQuote();
     
-    $('#tweet').on('click', function () {
+    $('#tweetthis').on('click', function () {
         window.open("https://twitter.com/intent/tweet?text=" + randomQuote);
     });
     

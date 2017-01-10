@@ -14,4 +14,23 @@ html body {
 
 #newQuote {
     margin: 20px 20px 20px 20px;
+    font-size: 20px;
 }
+
+#quotetext {
+    font-size: 25px;
+}
+
+.fa-twitter{
+    color: white;
+}
+
+#tweetbtn {
+    background-color: #333;
+    color: white;
+}
+
+#moveup {
+    color: white;
+}
+
