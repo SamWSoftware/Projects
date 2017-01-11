@@ -1,0 +1,16 @@
+#main {
+    display: flex;
+}
+
+#units {
+    color:black;
+}
+
+button.link { 
+    background:none;
+    border:none; 
+}
+
+#picture {
+    width: 250px;
+}
