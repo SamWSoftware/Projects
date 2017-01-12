@@ -7,4 +7,14 @@
     color:black;
     border-radius: 150px;
     font-family: 'Comfortaa', cursive; 
+    margin: 30px auto 30px auto;
+    box-shadow: 10px 10px 10px grey;
+}
+
+h2, h1 {
+    line-height: 80%;
+}
+
+#short {
+    margin-top: 100px;
 }

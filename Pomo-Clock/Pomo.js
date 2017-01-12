@@ -9,7 +9,7 @@ function addSession() {
     "use strict";
     sessionLen += 1;
     document.getElementById("sessionLength").innerHTML = sessionLen + ":00";
-    document.getElementById("sessionShort").innerHTML = "";
+    document.getElementById("short").innerHTML = "";
 }
 
 function minusSession() {
@@ -21,14 +21,14 @@ function minusSession() {
         sesShort = "You have to work for at least 5 minutes!";
     }
     document.getElementById("sessionLength").innerHTML = sessionLen + ":00";
-    document.getElementById("sessionShort").innerHTML = sesShort;
+    document.getElementById("short").innerHTML = sesShort;
 }
 
 function addRest() {
     "use strict";
     restLen  += 1;
     document.getElementById("restLength").innerHTML = restLen + ":00";
-    document.getElementById("restShort").innerHTML = "";
+    document.getElementById("short").innerHTML = "";
 }
 
 function minusRest() {
@@ -40,7 +40,7 @@ function minusRest() {
         restShort = "You have to rest for at least 2 minutes!";
     }
     document.getElementById("restLength").innerHTML = restLen + ":00";
-    document.getElementById("restShort").innerHTML = restShort;
+    document.getElementById("short").innerHTML = restShort;
 }
 
 function timeRemaining(endTime) {
