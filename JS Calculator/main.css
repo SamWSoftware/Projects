@@ -1,10 +1,14 @@
 #case {
-    background-color: darkgray;
+    background-color: #bbb;
     padding: 40px;
-    margin: 40px;
+    width: 600px;
     border-radius: 20px;
     border-width: 3px;
     border-color: black;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 30px auto 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #screen {
     background-color: white;
@@ -14,4 +18,16 @@
 }
 .myBtn {
     margin:5px;
+}
+
+@media (max-width: 600px) and (min-width: 430px) {
+    #case {
+        width: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    #case {
+        width: 430px;
+    }
 }
