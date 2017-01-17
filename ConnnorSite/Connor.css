@@ -1,0 +1,12 @@
+body {
+  margin-top: 60px;
+  background-color: grey;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.more_padding {
+  padding-top: 40px;
+}
