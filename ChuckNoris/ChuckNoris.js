@@ -2,7 +2,7 @@ $(document).ready(function () {
     "use strict";
     var randomQuote;
     function newQuote() {
-        var url = 'http://api.icndb.com/jokes/random?';
+        var url = 'https://api.icndb.com/jokes/random?';
         $.getJSON(url, function (data) {
             randomQuote = data.value.joke;
             $('#quotetext').html(data.value.joke);
