@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,700|Lato');
 
 :root{
-    --primary: #84EDBE;
-    --primary-background: rgba(72%, 98%, 87%, 0.9), rgba(72%, 98%, 87%, 1.0);
-    --accent: #983F64;
-    --accent2: #D86B85;
+    --primary: #5C6BC0;
+    --primary-background: rgba(19, 25, 62, 0.8), rgba(19, 25, 62, 1.0);
+    --accent: #FFAB00;
+    --accent2: #FFD740;
     --neutral-white: #ffffff;
     --neutral-gray: #28282B;
     --primary-font: "Lato";
