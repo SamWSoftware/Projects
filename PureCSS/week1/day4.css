@@ -1,0 +1,172 @@
+:root{
+    --oran: #e17002;
+    --offwhite: #F9E4CF;
+    --db: #985412;
+}
+
+
+.box {
+    position: relative;
+    width: 60vw;
+    height: 60vw;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    border: 2px solid red;
+}
+
+.head {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    border-radius: 50%;
+    background: var(--oran);
+}
+
+.headcopy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: var(--oran);
+    box-shadow: 0 -5px 5px 0 var(--oran);;
+}
+
+.earL, .earR{
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    top: -10%;
+    border-radius: 50;
+    background: var(--offwhite);
+    transform: rotate(-50deg);
+    border-radius: 50%;
+    border-top: 10px solid var(--db);
+    border-right: 10px solid var(--db);
+    box-shadow: 0 -5px 5px var(--db); 
+}
+
+.earR{
+    right:0px;
+    transform: rotate(50deg);
+    border-right: none;
+    border-left: 10px solid var(--db);
+}
+
+.bottomearL, .bottomearR {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    background: var(--offwhite);
+    border-radius: 50%;
+    box-shadow: 0 5px 5px #e9d4bf;
+    z-index: 0
+}
+
+.bottomearR {right: -35%; transform: rotate(-30deg)}
+.bottomearL {left: -35%; transform: rotate(30deg)}
+
+.inear {
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 10%;
+    left: 25%;
+    border-radius: 50%;
+    background: var(--db);
+}
+
+{
+    position: absolute;
+    width: ;
+    height: ;
+    top: ;
+    left: ;
+    border-radius: ;
+}
+
+.whitecover {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    left: 0;
+    border-radius: 0 0 15vw 15vw;
+    background: var(--offwhite);
+    box-shadow: 0px 5px 5px 0 var(--offwhite);
+    z-index: ;
+}
+
+.undereyeL, .undereyeR{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    border-radius: 50%;
+    background: var(--oran);
+    
+}
+.undereyeR {
+    right: 0%;
+}
+.nosewhite {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 46%;
+    left: 35%;
+    border-radius: 50%;
+    background: var(--offwhite);
+}
+.eyeL, .eyeR{
+    position: absolute;
+    width: 25%;
+    height: 35%;
+    top: 20%;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 10px 2px var(--db);
+}
+.eyeL{left: 10%;}
+.eyeR{right: 10%}
+.irisL {
+    position: absolute;
+    width: 95%;
+    height: 70%;
+    top: 20%;
+    left: 5%;
+    border-radius: 50%;
+    background: yellow;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+{
+    position: absolute;
+    width: ;
+    height: ;
+    top: ;
+    left: ;
+    border-radius: ;
+}
+{
+    position: absolute;
+    width: ;
+    height: ;
+    top: ;
+    left: ;
+    border-radius: ;
+}
+{
+    position: absolute;
+    width: ;
+    height: ;
+    top: ;
+    left: ;
+    border-radius: ;
+}
