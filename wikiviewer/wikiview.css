@@ -1,0 +1,58 @@
+html body {
+    background: #333;
+}
+
+
+.searchBtn {
+    border: 5px solid blue;
+    height: 65px;
+    width: 65px;
+    margin: auto;
+    margin-top: 30vh;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#searchBox {
+    border: 5px solid blue;
+    height: 65px;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 40px;
+    padding: 15px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    margin-top: 30vh;
+}
+
+.searchTerm {
+    color: white;
+    font-size: 35px;
+    width: 80%;
+}
+
+
+#searchwiden, #doSearch{
+    background: #333;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+}
+
+.searchTerm {
+    background: #333;
+    border:0;
+}
+
+.result {
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 3vw;
+}
