@@ -4,9 +4,14 @@ var wasEq = false;
 function enterDigit(x) {
     'use strict';
     // if x is operator
-    if (screenOut.slice(-1) === "." && '+-*/'.indexOf(x) !== -1) {
+    if (x == '0' && screenOut.length == 1 && screenOut[0] == 0) {
+        return 
+    }
+    
+    if (screenOut.slice(-1) === "." &&  ~'+-*/'.indexOf(x)   /* '+-/*'.indexOf(x) !== -1 */ ) {
         return;
     }
+    
     if ('+-*/'.indexOf(x) !== -1) {
         // if last char is operator
         if ('+-*/'.indexOf(screenOut.slice(-1)) !== -1) {
@@ -27,13 +32,32 @@ function enterDigit(x) {
         }
     }
     wasEq = false;
-    document.getElementById("output").innerHTML = screenOut;
+    document.getElementById("display").innerHTML = screenOut;
+}
+
+function decimal() {
+    var operator = '+-*/'.split(''),
+        last=0;
+    for (var i = 0; i<operator.length; i++) {
+        if ((m = screenOut.lastIndexOf(operator[i])) > last) {
+            last = m;
+        }
+    }
+    console.log(last);
+    var lastnumber = screenOut.slice(last);
+    console.log(lastnumber);
+    
+    if (!~lastnumber.indexOf('.') ) {
+        screenOut += '.';
+        document.getElementById("display").innerHTML = screenOut;
+    } 
+    
 }
 
 function clearScreen() {
     'use strict';
-    screenOut = " ";
-    document.getElementById("output").innerHTML = "...";
+    screenOut = "";
+    document.getElementById("display").innerHTML = "0";
     document.getElementById("equation").innerHTML = "...";
 }
 
@@ -44,10 +68,10 @@ function getEquals() {
     }
     var ans = eval(screenOut);
     if (ans.toString().length >= 10) {
-        ans = ans.toFixed(3);
+        ans = ans.toFixed(4);
     }
     document.getElementById("equation").innerHTML = screenOut + "=";
     screenOut = ans.toString();
-    document.getElementById("output").innerHTML = screenOut;
+    document.getElementById("display").innerHTML = screenOut;
     wasEq = true;
 }

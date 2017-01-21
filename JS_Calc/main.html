@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="main.js"></script>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
     
 <title>JavaScript Calculator</title>
 <div>
@@ -12,8 +13,8 @@
         <h4 id="equation" class="text-right">
             ...
         </h4>
-        <h2 id="output" class="text-right">
-            ...
+        <h2 id="display" class="text-right">
+            0
         </h2>
     </div>
     <div id="leftside" class="col-xs-6">
@@ -23,59 +24,59 @@
                 <button onclick="enterDigit('**')" class="btn btn-block myBtn">x^y</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="clearScreen()" class="btn btn-block myBtn">C</button>
+                <button onclick="clearScreen()" id="clear" class="btn btn-block myBtn">C</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('+')" class="btn btn-block myBtn">+</button>
+                <button onclick="enterDigit('+')" id="add" class="btn btn-block myBtn">+</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('-')" class="btn btn-block myBtn">-</button>
+                <button onclick="enterDigit('-')" id="subtract" class="btn btn-block myBtn">-</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('*')" class="btn btn-block myBtn">*</button>
+                <button onclick="enterDigit('*')" id="multiply" class="btn btn-block myBtn">*</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('/')" class="btn btn-block myBtn">/</button>
+                <button onclick="enterDigit('/')" id="divide" class="btn btn-block myBtn">/</button>
             </div>
             <div class="col-xs-12">
-                <button onclick="getEquals()" class="btn btn-block myBtn">=</button>
+                <button id="equals" onclick="getEquals()" class="btn btn-block myBtn">=</button>
             </div>
         </div>
     </div>
     <div id="rightside" class="col-xs-6">
         <div class="row">
             <div class="col-xs-4">
-                <button onclick="enterDigit('7')" class="btn btn-block myBtn">7</button>
+                <button onclick="enterDigit('7')" id="seven" class="btn btn-block myBtn">7</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('8')" class="btn btn-block myBtn">8</button>
+                <button onclick="enterDigit('8')" id="eight" class="btn btn-block myBtn">8</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('9')" class="btn btn-block myBtn">9</button>
+                <button onclick="enterDigit('9')" id="nine" class="btn btn-block myBtn">9</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('4')" class="btn btn-block myBtn">4</button>
+                <button onclick="enterDigit('4')" id="four" class="btn btn-block myBtn">4</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('5')" class="btn btn-block myBtn">5</button>
+                <button onclick="enterDigit('5')" id="five" class="btn btn-block myBtn">5</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('6')" class="btn btn-block myBtn">6</button>
+                <button onclick="enterDigit('6')" id="six" class="btn btn-block myBtn">6</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('1')" class="btn btn-block myBtn">1</button>
+                <button onclick="enterDigit('1')" id="one" class="btn btn-block myBtn">1</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('2')" class="btn btn-block myBtn">2</button>
+                <button onclick="enterDigit('2')" id="two" class="btn btn-block myBtn">2</button>
             </div>
             <div class="col-xs-4">
-                <button onclick="enterDigit('3')" class="btn btn-block myBtn">3</button>
+                <button onclick="enterDigit('3')" id="three" class="btn btn-block myBtn">3</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('0')" class="btn btn-block myBtn">0</button>
+                <button onclick="enterDigit('0')" id="zero" class="btn btn-block myBtn">0</button>
             </div>
             <div class="col-xs-6">
-                <button onclick="enterDigit('.')" class="btn btn-block myBtn"><strong>.</strong></button>
+                <button onclick="decimal()" id="decimal" class="btn btn-block myBtn"><strong>.</strong></button>
             </div>
         </div>
     </div>
