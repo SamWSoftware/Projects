@@ -1,5 +1,5 @@
 html body {
-    background: #333;
+    background: #444;
 }
 
 
@@ -36,23 +36,32 @@ html body {
 
 
 #searchwiden, #doSearch{
-    background: #333;
+    background: #444;
     color: white;
     border: 0;
     border-radius: 50%;
 }
 
 .searchTerm {
-    background: #333;
+    background: #444;
     border:0;
 }
 
 .result {
     background: white;
-    border: 2px solid black;
+    border: 5px solid black;
     border-radius: 15px;
     width: 90%;
     padding: 10px;
     margin: auto;
     margin-top: 3vw;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.result:hover {
+    box-shadow: 0 10px 5px 0 rgba(20, 20, 20, 0.7);
 }
