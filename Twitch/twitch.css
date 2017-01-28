@@ -1,0 +1,83 @@
+html body {
+    background: grey;
+}
+
+.titlebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #444;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.main_box {
+    margin: 160px 2vw 2vw 2vw;
+    background: #444;
+    padding: 0 2vw 2vw 2vw;
+    border-radius: 2vw;
+}
+
+.options {
+    display: flex;
+}
+
+li {
+    align-content: flex-start;
+    margin: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ddd;
+    margin: 1vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 #222;
+}
+
+.online {
+    background: rgba(0, 255, 0, 0.3);
+}
+
+.offline {
+    background: rgba(255, 0, 0, 0.6)
+}
+
+.user h2, .user h3, .user h4 {
+    margin: 1vw;
+}
+
+.name {
+    width: 20vw;
+}
+
+.status {
+    width: 11vw;
+}
+
+.game {
+    width: 15vw;
+}
+
+.description {
+    width: 42vw
+}
+
+.user:hover {
+    box-shadow: 10px 10px 10px 0 #222;
+}
+
+.selected {
+    font-weight: 900;
+}
