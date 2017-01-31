@@ -2,6 +2,7 @@
     --oran: #e17002;
     --offwhite: #F9E4CF;
     --db: #985412;
+    --vdb: #833500;
 }
 
 
@@ -9,19 +10,18 @@
     position: relative;
     width: 60vw;
     height: 60vw;
-    margin-top: 8%;
+    margin-top: %;
     margin-left: auto;
     margin-right: auto;
     background: none;
-    border: 2px solid red;
 }
 
 .head {
     position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
+    width: 70%;
+    height: 70%;
+    top: 5%;
+    left: 15%;
     border-radius: 50%;
     background: var(--oran);
 }
@@ -39,35 +39,27 @@
 
 .earL, .earR{
     position: absolute;
-    width: 30%;
-    height: 60%;
+    width: 50%;
+    height: 80%;
     top: -10%;
     border-radius: 50;
     background: var(--offwhite);
     transform: rotate(-50deg);
     border-radius: 50%;
-    border-top: 10px solid var(--db);
-    border-right: 10px solid var(--db);
-    box-shadow: 0 -5px 5px var(--db); 
+    border-top: 10px solid var(--vdb);
+    border-right: 10px solid var(--vdb);
+    box-shadow: 0 -5px 5px var(--vdb); 
 }
+.earL{left: -10%}
 
 .earR{
-    right:0px;
+    right:-10%;
     transform: rotate(50deg);
     border-right: none;
-    border-left: 10px solid var(--db);
+    border-left: 10px solid var(--vdb);
 }
 
-.bottomearL, .bottomearR {
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    top: 20%;
-    background: var(--offwhite);
-    border-radius: 50%;
-    box-shadow: 0 5px 5px #e9d4bf;
-    z-index: 0
-}
+
 
 .bottomearR {right: -35%; transform: rotate(-30deg)}
 .bottomearL {left: -35%; transform: rotate(30deg)}
@@ -82,25 +74,15 @@
     background: var(--db);
 }
 
-{
-    position: absolute;
-    width: ;
-    height: ;
-    top: ;
-    left: ;
-    border-radius: ;
-}
-
 .whitecover {
     position: absolute;
     width: 100%;
     height: 50%;
     top: 50%;
     left: 0;
-    border-radius: 0 0 15vw 15vw;
+    border-radius: 0 0 22vw 22vw;
     background: var(--offwhite);
-    box-shadow: 0px 5px 5px 0 var(--offwhite);
-    z-index: ;
+
 }
 
 .undereyeL, .undereyeR{
@@ -124,6 +106,17 @@
     border-radius: 50%;
     background: var(--offwhite);
 }
+.nose{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background: pink;
+    border-radius: 50%;
+    left: 10%;
+    top: 5%;
+    box-shadow: 5px 5px 5px rgba(200, 50, 100, 0.8)
+}
+
 .eyeL, .eyeR{
     position: absolute;
     width: 25%;
@@ -135,33 +128,123 @@
 }
 .eyeL{left: 10%;}
 .eyeR{right: 10%}
-.irisL {
+.irisL, .irisR {
     position: absolute;
     width: 95%;
-    height: 70%;
+    height: 60%;
     top: 20%;
-    left: 5%;
     border-radius: 50%;
     background: yellow;
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
-{
+.irisL{left:5%;}
+.irisR{right:5%;}
+
+.pupilL, .pupilR{
     position: absolute;
-    width: ;
-    height: ;
-    top: ;
-    left: ;
-    border-radius: ;
+    width: 80%;
+    height: 80%;
+    top: 15%;
+    left: 2%;
+    border-radius: 50%;
+    background: black;
 }
-{
+.mouth{
     position: absolute;
-    width: ;
-    height: ;
-    top: ;
-    left: ;
-    border-radius: ;
+    width: 40%;
+    height: 15%;
+    top: 75%;
+    left: 30%;
+    border-radius: 70%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    background: darkred;
+    
 }
+.tongue{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 14%;
+    border-radius: 50%;
+    background: rgb(200, 50, 100);
+}
+
+.s1L, .s2L{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--vdb);
+    -webkit-clip-path: polygon(0 58%, 0 65%, 30% 60%);
+    clip-path: polygon(0 58%, 0 65%, 30% 60%);
+}
+.s2L{transform: rotate(-20deg)}
+
+.s1R, .s2R{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--vdb);
+    -webkit-clip-path: polygon(100% 58%, 100% 65%, 70% 60%);
+    clip-path: polygon(100% 58%, 100% 65%, 70% 60%);
+}
+.s2R{transform: rotate(20deg)}
+
+.s3L{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--vdb);
+    -webkit-clip-path: polygon(0% 95%, 15% 100%, 28% 80%);
+    clip-path: polygon(0% 95%, 15% 100%, 28% 80%);
+}
+.s3R{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--vdb);
+    -webkit-clip-path: polygon(100% 95%, 85% 100%, 72% 80%);
+    clip-path: 
+}
+.stc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--vdb);
+    -webkit-clip-path: polygon(45% 0%, 55% 0%, 50% 40%)
+}
+
+.st1L, .st1R{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: -75%;
+    border-radius: 50%;
+    border: 2vw solid var(--vdb);
+    -webkit-clip-path: polygon(30% 100%, 60% 100%, 50% 40%)
+}
+.st2L, .st2R{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: -65%;
+    border-radius: 50%;
+    border:1.2vw solid var(--vdb);
+    -webkit-clip-path: polygon(40% 100%, 60% 100%, 50% 40%)
+}
+
+.st1R, .st2R{
+    transform: scaleX(-1);
+    right:0;
+}
+
 {
     position: absolute;
     width: ;
