@@ -7,30 +7,25 @@
     position: relative;
     width: 53vh;
     height: 80vh;
+    margin: auto;
     margin-top: 5vh;
-    border: 2px dotted red;
     background: none;
 }
-
 .headbox {
     position: absolute;
     width: 58%;
     height: 33%;
     left: 22%;
-    border: 2px solid red;
     background: none;
 }
-
 .bodybox {
     position: absolute;
     width: 65%;
     height: 67%;
     top: 33%;
     left: 22%;
-    border: 1px solid blue;
     background: none;
 }
-
 .head {
     position: absolute;
     width: 100%;
@@ -99,7 +94,6 @@
     top: 30%;
     left: 25%;
 }
-
 .leftface{
     position: absolute;
     width: 50%;
@@ -183,7 +177,6 @@
     top: 71%;
     left: 28%;
 }
-
 .hatrim{
     position: absolute;
     width: 80%;
@@ -279,4 +272,325 @@
     top: 12%;
     left: 78.5%;
     -webkit-clip-path: polygon(0 100%, 100% 0, 0 20%);
+}
+.neck{
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    background: var(--yellow);
+    left: 40%;
+    top: -10%;
+    border: 2px solid black;
+    transform: rotate(-10deg);
+}
+.bum{
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: var(--yellow);
+    top: 45%;
+    left: 25%;
+}
+.bodyL{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    background: var(--yellow);
+    border-left: 2px solid black;
+    transform: rotate(15deg);
+    top: 30%;
+    left: 30.5%
+}
+.bodyR{
+    position: absolute;
+    width: 40%;
+    height: 18%;
+    background: var(--yellow);
+    border-right: 2px solid black;
+    transform: rotate(-5deg);
+    top: 40%;
+    left: 44.3%
+}
+.coatbg{
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    background: black;
+    left: 25%;
+    -webkit-clip-path: polygon(0 80%, 55% 100%, 80% 80%, 100% 85%, 70% 3%, 56% 7%, 59% 17%, 54% 23%, 20% 10%, 10% 14%, 22% 34%, 19% 35%);
+}
+.coat{
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    background: var(--ppl);
+    left: 25%;
+    -webkit-clip-path: polygon(2% 80%, 55% 98%, 80% 79%, 98% 83%, 68% 6%, 55% 25%, 20% 12%, 12% 15%, 28% 40%, 27% 41%, 23% 35%, 20% 36%);
+}
+.button{
+    position: absolute;
+    width: 3%;
+    height: 2.5%;
+    background: none;
+    box-shadow: 0 2px 2px 1px;
+    border-radius: 50%
+}
+.btn1{
+    top: 40%;
+    left: 74%;
+}
+.btn2{
+    top: 30%;
+    left: 70%;
+}
+.btn3{
+    top: 20%;
+    left: 65%;
+}
+.upperarm{
+    position: absolute;
+    background: var(--yellow);
+    width: 80%;
+    left: 15%;
+    height: 30%;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    top: 8%;
+}
+.uablock{
+    position: absolute;
+    background: white;
+    width: 50%;
+    left: 30%;
+    height: 13%;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    top: 17%;
+}
+.legL{
+    position: absolute;
+    background: var(--yellow);
+    width: 15%;
+    height: 20%;
+    transform: rotate(12deg);
+    top: 69%;
+    left: 35%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    -webkit-clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0)
+}
+.legR{
+    position: absolute;
+    background: var(--yellow);
+    width: 12%;
+    height: 16%;
+    transform: rotate(10deg);
+    top: 69%;
+    left: 51%;
+    border-left: 4px solid black;
+    border-right: 3px solid black;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+}
+.footL{
+    position: absolute;
+    background: var(--yellow);
+    width: 30%;
+    height: 10%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 70%;
+    border-top-left-radius: 40%;
+    transform: rotate(10deg);
+    border: 2px solid black;
+    top: 85%;
+    left: 16%;
+}
+.footR{
+    position: absolute;
+    background: var(--yellow);
+    width: 30%;
+    height: 10%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 70%;
+    border-top-right-radius: 40%;
+    transform: rotate(-10deg);
+    border: 2px solid black;
+    top: 81%;
+    left: 50%;
+}
+.t1L, .t2L, .t1R, .t2R{
+    position: absolute;
+    border-top: 2px solid;
+    height: 1%;
+    border-radius: 50%;
+}
+.t1L{
+    width: 10%;
+    top: 89%;
+    left: 14%;
+    transform: rotate(-65deg);
+}
+.t2L{
+    width: 10%;
+    top: 91%;
+    left: 23%;
+    transform: rotate(-85deg);
+}
+.t1R{
+    width: 10%;
+    top: 85%;
+    left: 74%;
+    transform: rotate(75deg);
+}
+.t2R{
+    width: 10%;
+    top: 87%;
+    left: 68%;
+    transform: rotate(85deg);
+}
+.tailbox{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 50%;
+}
+.elipse1{
+    position: absolute;
+    height: 150%;
+    width: 80%;
+    bottom: -10%;
+    left: 25%;
+    background: var(--yellow);
+    border-radius: 50%;
+    border: 3px solid;
+    transform: rotate(20deg);
+    -webkit-clip-path: polygon(0 73%, 0 100%, 60% 100%, 45% 50%, 15% 60%);
+}
+.elipse-1{
+    position: absolute;
+    height: 120%;
+    width: 50%;
+    bottom: 5%;
+    left: 38%;
+    transform: rotate(20deg);
+    background: white;
+    border-radius: 50%;
+    border: 3px solid;
+     -webkit-clip-path: polygon(0 100%, 62% 100%, 70% 30%, 0% 54%);
+}
+.elipse2{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: var(--yellow);
+    border-radius: 50%;
+    border: 3px solid;
+    transform: rotate(-15deg);
+    left: -0%;
+    top: 52.8%;
+    -webkit-clip-path: polygon(35% 100%, 100% 100%, 100% 40%, 50%50%);
+}
+.elipse-2{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid;
+    transform: rotate(-20deg);
+    left: -0%;
+    top: 37%;
+    -webkit-clip-path: polygon(35% 100%, 100% 100%, 100% 50%, 50%50%);
+} 
+.elipse3{
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    background: var(--yellow);
+    border-radius: 50%;
+    border: 3px solid;
+    transform: rotate(50deg);
+    top: 17%
+}
+.w1L, .w2L, .w1R, .w2R{
+    position: absolute;
+    border-top: 2px solid;
+    height: 5%;
+    border-radius: 50%;
+}
+.w1L{
+    width: 35%;
+    top: 65%;
+    transform: rotate(5deg);
+    left: 15%
+}
+.w2L{
+    width: 50%;
+    transform: rotate(-30deg);
+    top: 90%;
+    left: 10%
+}
+.w1R{
+    width: 30%;
+    top: 50%;
+    left: 75%;
+    transform: rotate(-40deg);
+}
+.w2R{
+    width: 35%;
+    top: 70%;
+    left: 75%
+}
+.c1{
+    position: absolute;
+    width: 1%;
+    height: 2%;
+    top: 70%;
+    left: 60%;
+    background: none;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.c2{
+    position: absolute;
+    width: 1%;
+    height: 2%;
+    top: 64%;
+    left: 73%;
+    background: none;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.c3{
+    position: absolute;
+    width: 1%;
+    height: 1.5%;
+    top: 75%;
+    left: 70%;
+    background: none;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.c4{
+    position: absolute;
+    width: .5%;
+    height: 1%;
+    top: 75%;
+    left: 55%;
+    background: none;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.c5{
+    position: absolute;
+    width: 1%;
+    height: 1.5%;
+    top: 78%;
+    left: 58%;
+    background: none;
+    border: 1px solid;
+    border-radius: 50%;
 }
