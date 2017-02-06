@@ -1,0 +1,26 @@
+.table {
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5%;
+    background: #bbb;
+}
+.item {
+    width: 95%;
+    margin: 5%, 5%, 2.5%, 5%;
+    background: blue;
+    display: flex;
+    align-content: space-around;
+}
+.name, .shop{
+    width: 30%;
+    margin: 0 2.5% 0 2.5%;
+    background: red;
+}
+.values{
+    width: 25%;
+    background: red;
+    margin: 0 2.5% 0 2.5%;
+    display: flex;
+    align-content: space-around;
+}
