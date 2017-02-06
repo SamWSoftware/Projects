@@ -1,0 +1,64 @@
+.box{
+    position: relative;
+    margin: auto;
+    margin-top: 8%;
+    width: 50vmin;
+    height: 50vmin;
+
+}
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.face:hover{cursor: pointer}
+.Ldash{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    -webkit-clip-path: polygon(49% 3%, 49% 10%, 51% 10%, 51% 3%)
+}
+.t3{transform: rotate(90deg);}
+.t6{transform: rotate(180deg)}
+.t9{transform: rotate(-90deg)}
+.dash{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    -webkit-clip-path: polygon(49% 3%, 49% 8%, 51% 8%, 51% 3%)
+}
+.t1{transform: rotate(30deg)}
+.t2{transform: rotate(60deg)}
+.t4{transform: rotate(120deg)}
+.t5{ transform: rotate(150deg)}
+.t7{transform: rotate(-150deg)}
+.t8{transform: rotate(-120deg)}
+.t10{transform: rotate(-60deg)}
+.t11{transform: rotate(-30deg)}
+.sec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    -webkit-clip-path: polygon(49.5% 10%, 49.5% 52%, 50.5% 52%, 50.5% 10%, 50% 7%)
+}
+.minute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    -webkit-clip-path: polygon(49% 10%, 49% 52%, 51% 52%, 51% 10%, 50% 7%)
+}
+.hour {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    -webkit-clip-path: polygon(48% 25%, 48% 52%, 52% 52%, 52% 25%, 50% 22%);
+    
+}

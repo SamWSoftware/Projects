@@ -1,0 +1,16 @@
+.box{
+    position: relative;
+    width: 60vmin;
+    height: 60vmin;
+    margin: auto;
+    margin-top: 8%;
+    border: 2px solid pink;
+}
+.bodyR {
+    position: absolute;
+    width: 50%;
+    height: 55%;
+    top: ;
+    border-radius: 50%;
+    background: #222;
+}
