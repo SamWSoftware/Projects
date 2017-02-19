@@ -1,19 +1,19 @@
 #case {
-    margin: 30px;
-    padding: 20px;
+    margin: 5vmin;
+    padding: 5vmin;
     background-color: chocolate;
 }
 
 #screen {
-    margin: 20px;
-    padding: 20px;
+    padding: 3vmin;
     background-color: white;
+    display: block;
 }
 
 #screen2 {
-    margin: 20px;
-    padding: 20px;
+    padding: 3vmin;
     background-color: white;
+    display: none;
 }
 
 #player1Go, #player2Go {
@@ -22,8 +22,10 @@
 }
 
 #grid {
-    padding-bottom: 98%;
-    margin: 10px;
+    height: 74vmin;
+    width: 74vmin;
+    margin: auto;
+    margin-top: 3vmin;
     background-color: black;
     
 }
@@ -42,5 +44,5 @@
     position: absolute;
     height: 80%;
     width: 90%;
-    padding: 10% 5%;
+    margin: 10% 5%;
 }
