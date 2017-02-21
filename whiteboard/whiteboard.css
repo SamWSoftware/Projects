@@ -1,0 +1,81 @@
+body {
+  margin:2px;
+}
+#colourbar {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  top: 85%;
+  right: 10%;
+  border-collapse: collapse;
+}
+td, th {
+  display: table-cell;
+  width: 0.2778%;
+  vertical-align: inherit;
+}
+#sliderbox {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  top: 85%;
+  right: 10%;
+}
+#marker {
+  position: absolute;
+  width: 0.5%;
+  height: 140%;
+  top: -20%;
+  left: 0%;
+  background: black;
+}
+#controls {
+  position: absolute;
+  width: 5%;
+  height: 80%;
+  top: 10%;
+  right: 2%;
+}
+#big, #small, #medium, #tiny{
+  position: absolute;
+  border-radius: 50%;
+  background: hsl(0, 100%, 50%);
+  border: 1px solid;
+}
+#big{
+  width: 5vw;
+  height: 5vw;
+
+}
+#medium {
+  width: 3vw;
+  height: 3vw;
+  top: 20%;
+  left: 1vw;
+}
+#small {
+  width: 1vw;
+  height: 1vw;
+  top: 30%;
+  left: 2vw;
+}
+#tinybox {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 36%;
+}
+#tiny{
+  width: 0.3vw;
+  height: 0.3vw;
+  left: 2.4vw;
+  top: 2.2vw;
+}
+#rubber, #pencil{
+  position: absolute;
+  left: -3vw;
+  width: 10vw;
+  height: 9vw;
+}
+#pencil {top: 45%;}
+#rubber {top: 65%;}
