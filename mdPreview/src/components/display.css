@@ -1,0 +1,27 @@
+#displayScreen{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    right: 0;
+}
+#displat-top {
+    font-size: 1em;
+}
+#displaytext {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    right: 5%;
+    background: white;
+    border: 1px solid black;
+    text-align: left;
+    font-size: 0.9em;
+}
+#drop_zone{
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    top: 90%;
+    right: 5%;
+    border: 2px dashed #444;
+}

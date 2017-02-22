@@ -1,0 +1,15 @@
+#edit-top {
+    font-size: 1em;
+}
+#edit {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+}
+#editorscreen{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    left: 0;
+}

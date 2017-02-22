@@ -1,5 +1,6 @@
 var strict = false,
-    clickDisabled = false;
+  clickDisabled = false,
+  audio = document.getElementsByTagName('audio');
 
 
 function highlight(colour) {
@@ -8,18 +9,12 @@ function highlight(colour) {
         style = window.getComputedStyle(pad[0]),
         col = style.getPropertyValue('border'),
         nums = col.match(/\d+/g),
-        i;
+        i,
+        val = colour.match(/\d+/)[0];
+  console.log(audio);
     nums.shift();
-    /*switch(colour) {
-        case 'c1':
-            //play tune 1
-        case 'c2':
-            //play tune 2
-        case 'c3':
-            //play tune 3
-        case 'c4':
-            //play tune 4
-    }*/
+  audio[val-1].play();
+   
     for (i = 0; i < 3; i += 1) {
         nums[i] = Number(nums[i]) + 50;
     }
@@ -49,9 +44,8 @@ function wrong() {
     'use strict';
     var pad = document.getElementsByClassName('face'),
         style = window.getComputedStyle(pad[0]),
-        col = style.getPropertyValue('background'),
-        nums = col.match(/\d+/g),
-        i;
+        col = style.getPropertyValue('background');
+        
     pad[0].style.background = "rgb(255, 0, 0)" + col.slice(19);
     setTimeout(function () {
         pad[0].style.background = col;

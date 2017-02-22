@@ -1,48 +1,48 @@
 #case {
-    margin: 5vmin;
-    padding: 5vmin;
-    background-color: chocolate;
+  margin: 5vmin;
+  padding: 5vmin;
+  background-color: chocolate;
 }
 
 #screen {
-    padding: 3vmin;
-    background-color: white;
-    display: block;
+  padding: 3vmin;
+  background-color: white;
+  display: block;
 }
 
 #screen2 {
-    padding: 3vmin;
-    background-color: white;
-    display: none;
+  background-color: white;
+  display: none;;
 }
 
 #player1Go, #player2Go {
-    background-color: blue;
-    color: white;
+  position: relative;
+  width: 30%;
+  height: 5%;
+  padding: 1%;
+  top: 0;
+  background-color: blue;
+  color: white;
 }
+#player1Go{left: 10%}
+#player2Go{left: 60%}
 
 #grid {
-    height: 74vmin;
-    width: 74vmin;
-    margin: auto;
-    margin-top: 3vmin;
-    background-color: black;
+  height: 74vmin;
+  width: 74vmin;
+  margin: 3vw auto;
+  margin-bottom: 3vw;
+  background-color: black;
     
 }
 
 .square {
-    float: left;
-    position: relative;
-    width: 30%;
-    padding-bottom: 30%;
-    margin: 1.66%;
-    overflow: hidden;
-    background-color: white;
+  float: left;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  margin: 1.66%;
+  font-size: ;
+  background-color: white;
 }
 
-.content {
-    position: absolute;
-    height: 80%;
-    width: 90%;
-    margin: 10% 5%;
-}
