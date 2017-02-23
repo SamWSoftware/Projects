@@ -35,22 +35,12 @@ this is **Bold** text and this is _italics_`),
     });
   }
   
-  uploadFile(evt) {
-    evt.stopPropagation();
-    evt.preventDefault();
-    
-    let files = evt.dataTransfer.files,
-      i, f;
-    for (i = 0; i<files.length; i+=1){
-      f = files[i];
-      if (f.name.slice(-3) === '.md'){
-        this.setState({
-          input: FileReader.readAsText(f),
-          output: marked(FileReader.readAsText(f)),
-        });
-        return;
-      }
-    }
+  uploadFile(input) {
+    console.log('got the text', input);
+    this.setState({
+      intext: input,
+      outtext: marked(input),
+    });
   }
   
   render() {
@@ -62,8 +52,8 @@ this is **Bold** text and this is _italics_`),
         intext={this.state.intext}
         />
       <Display 
+      upload={this.uploadFile.bind(this)}
       outtext={this.state.outtext}
-      uploadFile={this.uploadFile.bind(this)}
       />
       </div>
     );
