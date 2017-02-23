@@ -25,7 +25,7 @@ class App extends Component {
 this is **Bold** text and this is _italics_`,
       outtext: marked(`## Markdown editor 
 this is **Bold** text and this is _italics_`),
-    }
+    };
   }
   
   changeOutput(input) {
