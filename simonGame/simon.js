@@ -1,6 +1,6 @@
 var strict = false,
-  clickDisabled = false,
-  audio = document.getElementsByTagName('audio');
+    clickDisabled = false,
+    audio = document.getElementsByTagName('audio');
 
 
 function highlight(colour) {
@@ -11,15 +11,15 @@ function highlight(colour) {
         nums = col.match(/\d+/g),
         i,
         val = colour.match(/\d+/)[0];
-  console.log(audio);
+    console.log(audio);
     nums.shift();
-  audio[val-1].play();
-   
+    audio[val-1].play();
+
     for (i = 0; i < 3; i += 1) {
         nums[i] = Number(nums[i]) + 50;
     }
     pad[0].style.border = "10vmin solid rgb(" + nums.join(',') + ')';
-        
+
     setTimeout(function () {
         pad[0].style.border = "10vmin solid " + col.slice(11);
     }, 400);
@@ -45,7 +45,7 @@ function wrong() {
     var pad = document.getElementsByClassName('face'),
         style = window.getComputedStyle(pad[0]),
         col = style.getPropertyValue('background');
-        
+
     pad[0].style.background = "rgb(255, 0, 0)" + col.slice(19);
     setTimeout(function () {
         pad[0].style.background = col;
@@ -54,7 +54,7 @@ function wrong() {
         run([]);
     }
 }
-    
+
 function press(colour) {
     'use strict';
     if (!clickDisabled) {
@@ -62,7 +62,7 @@ function press(colour) {
         clickDisabled = true;
         setTimeout(function () {clickDisabled = false; }, 400);
     }
-    
+
 }
 function won() {
     'use strict';
@@ -115,7 +115,6 @@ function testPlayer(seq) {
         if (!clickDisabled) {
             highlight('c2');
             i = isCorrect('c2', i, seq);
-            
             clickDisabled = true;
             setTimeout(function () {clickDisabled = false; }, 400);
         }

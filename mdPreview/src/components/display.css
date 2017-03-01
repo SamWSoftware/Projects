@@ -4,10 +4,10 @@
     height: 80%;
     right: 0;
 }
-#displat-top {
+#displatTop {
     font-size: 1em;
 }
-#displaytext {
+#displayText {
     position: absolute;
     width: 90%;
     height: 80%;
@@ -16,8 +16,9 @@
     border: 1px solid black;
     text-align: left;
     font-size: 0.9em;
+    overflow-y: scroll;
 }
-#drop_zone{
+#dropZone{
     position: absolute;
     width: 90%;
     height: 5%;

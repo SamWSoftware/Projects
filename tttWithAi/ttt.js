@@ -26,7 +26,7 @@ function togglePlayer(char) {
 
 }
 
-function changescreens() {
+function changeScreens() {
     document.getElementById("screen").style.display = 'none';
     document.getElementById("screen2").style.display = 'block';
     document.getElementById("player2Go").style.display = 'none';
@@ -50,7 +50,7 @@ function startGame(char) {
             [2,4,6]
         ];
     console.log(s0);
-    changescreens();
+    changeScreens();
     for (var i = 0; i < sqrs.length; i++){
         sqrs[i].innerHTML = board[i];
     }

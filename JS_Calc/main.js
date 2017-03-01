@@ -5,25 +5,25 @@ function enterDigit(x) {
     'use strict';
     // if x is operator
     if (x == '0' && screenOut.length == 1 && screenOut[0] == 0) {
-        return 
+        return
     }
-    
+
     if (screenOut.slice(-1) === "." &&  ~'+-*/'.indexOf(x)   /* '+-/*'.indexOf(x) !== -1 */ ) {
         return;
     }
-    
+
     if ('+-*/'.indexOf(x) !== -1) {
         // if last char is operator
         if ('+-*/'.indexOf(screenOut.slice(-1)) !== -1) {
             screenOut = screenOut.slice(0, -1) + x;
-            
+
         // if last char is space, and x is *or/ do nothing
         } else if (screenOut.slice(-1) === " " &&
                    '*/'.indexOf(x) !== -1) {
         } else {
             screenOut += x;
         }
-    // if x is number    
+    // if x is number
     } else {
         if (wasEq) {
             screenOut = x;
@@ -44,14 +44,14 @@ function decimal() {
         }
     }
     console.log(last);
-    var lastnumber = screenOut.slice(last);
-    console.log(lastnumber);
-    
-    if (!~lastnumber.indexOf('.') ) {
+    var lastNumber = screenOut.slice(last);
+    console.log(lastNumber);
+
+    if (!~lastNumber.indexOf('.') ) {
         screenOut += '.';
         document.getElementById("display").innerHTML = screenOut;
-    } 
-    
+    }
+
 }
 
 function clearScreen() {
