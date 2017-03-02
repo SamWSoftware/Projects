@@ -2,6 +2,7 @@
   "name": "mdPreview",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://samwcoding.github.io/Projects/mdPreview/build",
   "devDependencies": {
     "react-scripts": "0.9.0"
   },
