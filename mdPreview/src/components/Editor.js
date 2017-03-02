@@ -8,12 +8,12 @@ export default class Editor extends React.Component {
     }
     render() {
         return (
-            <div id="editorscreen">
-                <div id="edit-top">This is the editor window</div>
-                <textarea 
-                    id="edit" 
-                    onChange={this.changeOutput.bind(this)} 
-                    value={this.props.intext} 
+            <div id="editorScreen">
+                <div id="editTop">This is the editor window</div>
+                <textarea
+                    id="edit"
+                    onChange={this.changeOutput.bind(this)}
+                    value={this.props.intext}
                 />
             </div>
         );

@@ -1,4 +1,4 @@
-#edit-top {
+#editTop {
     font-size: 1em;
 }
 #edit {
@@ -7,7 +7,7 @@
     height: 80%;
     left: 5%;
 }
-#editorscreen{
+#editorScreen{
     position: absolute;
     width: 50%;
     height: 80%;

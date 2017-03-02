@@ -46,9 +46,9 @@ function minusRest() {
 function timeRemaining(endTime) {
     "use strict";
     var remaining = (endTime - new Date()) / 1000,
-        remainformatted = (Math.floor(remaining.toFixed() / 60.0))
+        remainFormatted = (Math.floor(remaining.toFixed() / 60.0))
             + ":" + ("0" + (remaining.toFixed(0) % 60)).slice(-2);
-    return remainformatted;
+    return remainFormatted;
 }
 
 function startTimer() {

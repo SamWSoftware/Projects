@@ -13,13 +13,13 @@ $(document).ready(function () {
             }
         });
     }
-    
+
     newQuote();
-    
+
     $('#tweet').on('click', function () {
         window.open("https://twitter.com/intent/tweet?text=" + randomQuote);
     });
-    
+
     $('#newQuote').on('click', function () {
         newQuote();
     });

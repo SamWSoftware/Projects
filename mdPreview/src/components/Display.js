@@ -7,7 +7,7 @@ export default class Display extends React.Component {
         var files ;
         evt.stopPropagation();
         evt.preventDefault();
-        var selectedFile = document.getElementById('files')
+        var selectedFile = document.getElementById('files');
         files = selectedFile.files;
         if (!files.length){
             try {
@@ -31,14 +31,14 @@ export default class Display extends React.Component {
         };
         reader.readAsBinaryString(file);
     }
-    
+
     handleDrag(evt){
         console.log('drag over');
         evt.stopPropagation();
         evt.preventDefault();
         evt.dataTransfer.dropEffect = 'copy';
     }
-    
+
     handleDrop(evt){
         evt.stopPropagation();
         evt.preventDefault();
@@ -47,12 +47,12 @@ export default class Display extends React.Component {
     }
 
 
-    render() { 
+    render() {
         return (
             <div id="displayScreen">
-                <div id="display-top">This is the display window</div>
-                <div id="displaytext" contentEditable='true' dangerouslySetInnerHTML={{ __html: this.props.outtext }}></div>
-                <div id="drop_zone" onDragOver={this.handleDrag.bind(this)} onDrop={this.sendFiles.bind(this)}>
+                <div id="displayTop">This is the display window</div>
+                <div id="displayText" contentEditable='true' dangerouslySetInnerHTML={{ __html: this.props.outtext }}></div>
+                <div id="dropZone" onDragOver={this.handleDrag.bind(this)} onDrop={this.sendFiles.bind(this)}>
                     <input type="file" id="files" name="file" />
                     <button onClick={this.sendFiles.bind(this)}>Upload File</button>
                 </div>

@@ -1,12 +1,12 @@
 function blobs() {
         rub = false;
       }
-      
+
       function geof() {
         rub = true;
       };
-      
-      
+
+
       const canvas = document.querySelector('#draw');
       const ctx = canvas.getContext('2d');
       canvas.width = 0.90 * window.innerWidth;
@@ -30,15 +30,15 @@ function blobs() {
         ctx.lineTo(e.offsetX, e.offsetY);
         ctx.strokeStyle = rub ? '#fff' : `hsl(${hue}, 100%, 50%)`;
         ctx.stroke();
-        
+
         [lastX, lastY] = [e.offsetX, e.offsetY];
       }
-      
+
       canvas.addEventListener('mousedown', (e) => {
         isDrawing = true;
         [lastX, lastY] = [e.offsetX, e.offsetY];
       });
-      
+
       canvas.addEventListener('mousemove', draw);
       canvas.addEventListener('mouseup', () => isDrawing = false);
       canvas.addEventListener('mouseout', () => isDrawing = false);
@@ -51,7 +51,7 @@ function blobs() {
         huepc = hue < 0 ? ((hue % 360)+360)/3.6 : (hue % 360)/3.6;
         slider.style.left = huepc + "%";
       });
-      
+
       function penSize(s){
         ctx.lineWidth = window.innerWidth * s / 100;
       }
