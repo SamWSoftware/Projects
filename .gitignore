@@ -1,0 +1,33 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/**/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# generated css
+src/styles/css/
+
+# generated json data
+cloud-data.json
+sun-data.json
+stars-data.json
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.sass-cache/
+*.map
+*.pem
+*.crx
+*.zip
+
+#Visual Studio Code config
+.vscode/*
