@@ -17,3 +17,16 @@ input {
 .reminder-form {
     padding: 5px;
 }
+
+.list-item {
+    display: inline-block;
+}
+
+.delete-button {
+    float: right;
+    padding-left: 5px;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}

@@ -18,14 +18,14 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <div className="App-title">Countdown to {this.state.deadline}</div>
+            <div className="app">
+                <div className="app-title">Countdown to {this.state.deadline}</div>
                 <Clock 
                     deadline={this.state.deadline}
                 />
                 <Form inline>
                     <FormControl 
-                        className="Deadline-input"
+                        className="deadline-input"
                         onChange={event => this.setState({newDeadline: event.target.value})}
                         placeholder="new date"
                     />
