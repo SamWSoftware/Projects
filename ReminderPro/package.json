@@ -9,7 +9,8 @@
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.0.14",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "sfcookies": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +20,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://samwcoding.github.io/Projects/ReminderPro",
+  "homepage": "http://samwcoding.github.io/Projects/ReminderPro/build",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
