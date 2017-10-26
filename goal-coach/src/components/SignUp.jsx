@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { firebaseApp } from '../firebase';
 
 class SignUp extends Component {
