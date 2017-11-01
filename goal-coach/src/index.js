@@ -15,12 +15,10 @@ const store = createStore(reducer);
 
 firebaseApp.auth().onAuthStateChanged(user => {
     if (user) {
-        console.log('user logged in', user);
         const { email } = user;
         store.dispatch(logUser(email));
         browserHistory.push('/app');
     } else {
-        console.log('user logged out or is yet to sign in');
         browserHistory.replace('/signin')
     }
 })
