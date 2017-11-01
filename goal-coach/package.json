@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.6.0",
+    "gh-pages": "^1.0.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-redux": "^5.0.6",
@@ -15,6 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "http://samwcoding.github.io/Projects/goal-coach/build"
 }
