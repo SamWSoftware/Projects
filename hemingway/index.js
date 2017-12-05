@@ -43,6 +43,7 @@ Paste in something you're working on and edit away. Or, click the Write button a
     outputArea.innerHTML = inP.join(" ");
   }
   window.format = format;
+  format();
 
   function counters() {
     document.querySelector("#adverb").innerHTML = `You have used ${
