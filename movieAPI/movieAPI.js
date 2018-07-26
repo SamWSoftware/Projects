@@ -1,10 +1,13 @@
+const DB = require('./dynamo');
+const Dynamo = new DB();
+
 exports.handler = async (event) => {
     console.log(event);
     if (event.httpMethod === 'PUT') {
-        let response = putMovie(event)
+        let response = await putMovie(event)
         return done(response);
     } else if (event.httpMethod === 'GET') {
-        let response = getMovie(event);
+        let response = await getMovie(event);
         return done(response);
     }
 };
@@ -43,6 +46,9 @@ const getMovie = event => {
     return movies[genre];
 }
 
-const putMovie = event => {
-    return;
+const putMovie = async event => {
+    let { movie } = JSON.parse(event.body);
+    let genre = event.pathParameters.genre;
+    let ID = `${movie}-${genre}`;
+    return Dynamo.increment(ID, 'movie-api')
 }
